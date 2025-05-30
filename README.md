@@ -16,6 +16,27 @@
    python3 -m pip install -r requirements.txt
    ```
 5. **Setup .env file** : At the root directory setup the .env file with the secrets
+```bash
+# .env
+ENV=development
+PREFIX=/
+ROOT_PATH=/demo-app
+PORT=8000
+WORKERS=1
+
+# Build args
+PROJECT_NAME=demo_app
+BASE_IMAGE=python:3.11-slim
+REPOSITORY_NAME=docker.io/anieshaz
+
+# Database settings
+DB_TYPE=postgresql
+DB_USER=myuser
+DB_PASSWORD=mypassword
+DB_HOST=db
+DB_PORT=5432
+DB_NAME=mydatabase
+```
 
 ## Testing
 Before pushing any changes make sure that all the tests are passing by running.
